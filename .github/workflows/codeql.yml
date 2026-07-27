@@ -13,7 +13,11 @@ name: "CodeQL Advanced"
 
 on:
   push:
-  workflow_call: 
+  workflow_call:
+
+permissions:
+  contents: read
+  security-events: write
 
 jobs:
   analyze:
